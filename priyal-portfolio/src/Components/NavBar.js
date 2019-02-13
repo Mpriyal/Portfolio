@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import logo from "../logo.svg";
 
-export default class Navbar extends Component {
+export default class NavBar extends Component {
     render() {
         return (
             <nav className="nav" id="navbar">
