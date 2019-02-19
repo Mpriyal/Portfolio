@@ -8,7 +8,7 @@ export default class NavBar extends Component {
     };
     render() {
         return (
-            <nav className="nav" id="navbar">
+        <nav className="nav" id="navbar">
                 <div className="nav-content">
                     <img
                         src={logo}
