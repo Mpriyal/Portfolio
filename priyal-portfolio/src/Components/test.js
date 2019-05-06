@@ -26,12 +26,12 @@ export default class NavBar extends Component {
 
 
     render() {
-        var newClassName = this.state.scrolled ? "navbar solid navbar-expand-lg fixed-top" : "navbar navbar-expand-lg fixed-top";
+        let newClassName = this.state.scrolled ? "navbar solid navbar-expand-lg fixed-top" : "navbar navbar-expand-lg fixed-top";
         return (
             <div id="home">
                 <nav className={newClassName}>
                     <div className="container-fluid">
-                        <a className="navbar-brand" href="#"><img src="../../public/img/nuno.png"/></a>
+                        {/*<a className="navbar-brand" href="#"><img src="../../public/img/nuno.png"/></a>*/}
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                             <span className="custom-toggler-icon"><i className="fas fa-bars"/></span>
                         </button>
