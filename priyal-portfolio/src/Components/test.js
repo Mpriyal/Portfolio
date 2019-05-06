@@ -31,7 +31,9 @@ export default class NavBar extends Component {
             <div id="home">
                 <nav className={newClassName}>
                     <div className="container-fluid">
-                        {/*<a className="navbar-brand" href="#"><img src="../../public/img/nuno.png"/></a>*/}
+                        <Link className="navbar-brand" to="home">
+                            <h2>Priyal Mittal</h2>
+                        </Link>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                             <span className="custom-toggler-icon"><i className="fas fa-bars"/></span>
                         </button>

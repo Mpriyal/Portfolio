@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Kalam:700|Dancing+Script:700|Merienda:700|Courgette');
 
-/*:root {*/
-  /*--off-white: #fafafa;*/
+
+/*body {*/
+  /*overflow-x: hidden;*/
+  /*font-family: 'Lato', sans-serif;*/
+  /*color: #505962;*/
 /*}*/
-
-body {
-  overflow-x: hidden;
-  font-family: 'Lato', sans-serif;
-  color: #505962;
-}
 
 /*--- Nav Scrolling Offset --*/
 .offset:before {
@@ -27,14 +25,20 @@ body {
 
 .navbar {
   padding: .7rem 1rem;
-  text-transform: uppercase;
   font-size: .9rem;
   font-weight: 700;
   letter-spacing: .1rem;
   transition: background-color .5s ease 0s;
 }
-.navbar-brand img {
-  height: 2rem;
+.navbar-brand h2 {
+  cursor: pointer;
+  text-transform: capitalize;
+  color:white;
+  font-weight: bold;
+  letter-spacing: .3rem;
+  /*text-shadow: 2px 2px #FF0000;*/
+  text-shadow: 1.5px 1.5px grey;
+  font-family: 'Courgette', cursive;
 }
 .svg-inline--fa.fa-w-14 {
   color: white;
@@ -49,12 +53,17 @@ body {
 }
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
+  cursor: pointer;
   color: #1ebba3!important;
 }
 .navbar .solid {
   background: rgba(0, 0, 0, 0.7)!important;
   transition: background-color 1s ease 0s;
 }
+
+/*Link label {*/
+  /*cursor: pointer;*/
+/*}*/
 
 /*============= LANDING PAGE =============*/
 
@@ -72,12 +81,12 @@ body {
 .caption h1 {
   color: white;
   font-size: 4.5rem;
-  text-transform: uppercase;
   font-weight: 700;
   letter-spacing: .3rem;
   text-shadow: .1rem .1rem .8rem black;
   padding-bottom: 1rem;
 }
+
 .caption h3 {
   color: white;
   font-size: 2.5rem;
@@ -86,6 +95,7 @@ body {
   text-shadow: .1rem .1rem .5rem black;
   padding-bottom: 2rem;
 }
+
 .btn-lg {
   border-width: medium;
   border-radius: 0;
