@@ -10,7 +10,25 @@ import Projects from "./Components/Projects";
 import ContactMe from "./Components/ContactMe";
 
 class App extends Component {
+
+    // constructor() {
+    //     super();
+    //     this.state = {
+    //         currentScrollHeight: 0
+    //     };
+    // }
+
+    // componentDidMount () {
+    //     window.onscroll =()=>{
+    //         const newScrollHeight = Math.ceil(window.scrollY / 50) *50;
+    //         if (this.state.currentScrollHeight !== newScrollHeight){
+    //             this.setState({currentScrollHeight: newScrollHeight})
+    //         }
+    //     }
+    // }
+
   render() {
+      // const opacity = Math.min(100 / this.state.currentScrollHeight  , 1)
     return (
       <div className="App">
           <Test/>

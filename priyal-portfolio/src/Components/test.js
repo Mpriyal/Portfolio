@@ -3,13 +3,33 @@ import logo from "../logo.svg";
 import {Link, animateScroll as scroll} from "react-scroll";
 
 export default class NavBar extends Component {
+
+    state = {
+        scrolled: false
+    };
+
     scrollToTop = () => {
         scroll.scrollToTop();
     };
+
+    listenScrollEvent = e => {
+        if (window.scrollY > 300) {
+            this.setState({scrolled: true})
+        } else {
+            this.setState({scrolled: false})
+        }
+    };
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.listenScrollEvent)
+    }
+
+
     render() {
+        var newClassName = this.state.scrolled ? "navbar solid navbar-expand-lg fixed-top" : "navbar navbar-expand-lg fixed-top";
         return (
             <div id="home">
-                <nav className="navbar navbar-expand-lg fixed-top">
+                <nav className={newClassName}>
                     <div className="container-fluid">
                         <a className="navbar-brand" href="#"><img src="../../public/img/nuno.png"/></a>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
@@ -123,4 +143,4 @@ export default class NavBar extends Component {
             </div>
         );
     }
-}
+            }
