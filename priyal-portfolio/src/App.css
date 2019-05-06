@@ -9,6 +9,7 @@
 /*}*/
 
 /*--- Nav Scrolling Offset --*/
+
 .offset:before {
   height: 4rem;
   margin-top: -4rem;
@@ -22,10 +23,9 @@
 }
 
 /*============= NAVIGATION =============*/
-
 .navbar {
   padding: .7rem 1rem;
-  font-size: .9rem;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: .1rem;
   transition: background-color .5s ease 0s;

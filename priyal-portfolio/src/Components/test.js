@@ -31,7 +31,13 @@ export default class NavBar extends Component {
             <div id="home">
                 <nav className={newClassName}>
                     <div className="container-fluid">
-                        <Link className="navbar-brand" to="home">
+                        <Link className="navbar-brand"
+                              activeClass="active"
+                              to="home"
+                              spy={true}
+                              smooth={true}
+                              offset={-70}
+                              duration={500}>
                             <h2>Priyal Mittal</h2>
                         </Link>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
