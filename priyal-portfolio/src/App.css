@@ -8,6 +8,14 @@
   /*color: #505962;*/
 /*}*/
 
+body {
+  line-height: 24px;
+  font-size: 13px;
+  color: #333333;
+  font-family: "Raleway", sans-serif;
+  background-color: #fff;
+}
+
 /*--- Nav Scrolling Offset --*/
 
 .offset:before {
@@ -105,6 +113,19 @@
   text-transform: uppercase;
   display: inline-block !important;
 
+}
+
+.main_title h2 {
+  font-size: 36px;
+  font-family: "Bree Serif", serif;
+  color: #222222;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid #222222;
+  display: inline-block;
+  line-height: 58px;
+  padding: 0px 23px;
+  font-weight: 800;
 }
 
 /*============ BOOTSTRAP BREAK POINTS:

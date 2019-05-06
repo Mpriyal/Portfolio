@@ -6,7 +6,9 @@ export default class WorkExperience extends Component {
         return (
             <div className={"workEx" + (this.props.dark ? " section-dark" : "")}>
                 <br/>
-                <h1 align="center">{this.props.title}</h1>
+                <div className="main_title" align="center">
+                    <h2 align="center">{this.props.title}</h2>
+                </div>
                 <h2 align="center">Lost of work ex to brag about coming soon!</h2>
                 <p>{dummyText}</p>
                 <p>{dummyText}</p>

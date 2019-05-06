@@ -18,7 +18,7 @@ class App extends Component {
           <Test/>
         {/*<NavBar/>*/}
           <Skills
-              title={"Skills"}
+              title={"My Skills"}
               dark={true}
               id={"skills"}/>
           <Education
