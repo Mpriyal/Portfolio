@@ -20,61 +20,61 @@ export default class NavBar extends Component {
                         <li className="nav-item">
                             <Link
                                 activeClass="active"
-                                to="section1"
+                                to="skills"
                                 spy={true}
                                 smooth={true}
                                 offset={-70}
                                 duration={500}
                             >
-                                Section 1
+                                Skills
                             </Link>
                         </li>
                         <li className="nav-item">
                             <Link
                                 activeClass="active"
-                                to="section2"
+                                to="education"
                                 spy={true}
                                 smooth={true}
                                 offset={-70}
                                 duration={500}
                             >
-                                Section 2
+                                Education
                             </Link>
                         </li>
                         <li className="nav-item">
                             <Link
                                 activeClass="active"
-                                to="section3"
+                                to="workEx"
                                 spy={true}
                                 smooth={true}
                                 offset={-70}
                                 duration={500}
                             >
-                            Section 3
+                            Work Experience
                             </Link>
                         </li>
                         <li className="nav-item">
                             <Link
                                 activeClass="active"
-                                to="section4"
+                                to="projects"
                                 spy={true}
                                 smooth={true}
                                 offset={-70}
                                 duration={500}
                             >
-                                Section 4
+                                Projects
                             </Link>
                         </li>
                         <li className="nav-item">
                             <Link
                                 activeClass="active"
-                                to="section5"
+                                to="contact"
                                 spy={true}
                                 smooth={true}
                                 offset={-70}
                                 duration={500}
                             >
-                                Section 5
+                                Contact Me
                             </Link>
                         </li>
                     </ul>

@@ -1,44 +1,40 @@
 import React, { Component } from 'react';
 import './App.css';
+import Test from "./Components/test";
 import NavBar from "./Components/NavBar";
 import Section from "./Components/Section";
-import dummyText from "./DummyText";
+import Skills from "./Components/Skills";
+import Education from "./Components/Education";
+import WorkExperience from "./Components/WorkExperience";
+import Projects from "./Components/Projects";
+import ContactMe from "./Components/ContactMe";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <NavBar/>
-        <Section
-            title={"Section 1"}
-            subtitle={dummyText}
-            dark={true}
-            id={"section1"}
-        />
-        <Section
-            title={"Section 2"}
-            subtitle={dummyText}
-            dark={true}
-            id={"section2"}
-        />
-        <Section
-            title={"Section 3"}
-            subtitle={dummyText}
-            dark={true}
-            id={"section3"}
-        />
-        <Section
-            title={"Section 4"}
-            subtitle={dummyText}
-            dark={true}
-            id={"section4"}
-        />
-        <Section
-            title={"Section 5"}
-            subtitle={dummyText}
-            dark={true}
-            id={"section5"}
-        />
+          <Test/>
+        {/*<NavBar/>*/}
+          <Skills
+              title={"Skills"}
+              dark={true}
+              id={"skills"}/>
+          <Education
+              title={"Education"}
+              dark={true}
+              id={"education"}/>
+          <WorkExperience
+              title={"Work Experience"}
+              dark={true}
+              id={"workEx"}/>
+          <Projects
+              title={"Projects"}
+              dark={true}
+              id={"projects"}/>
+          <ContactMe
+              title={"Contact Me"}
+              dark={true}
+              id={"contact"}/>
       </div>
     );
   }
