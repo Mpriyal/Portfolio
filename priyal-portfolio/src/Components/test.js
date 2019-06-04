@@ -123,7 +123,6 @@ export default class NavBar extends Component {
                     </div>
                 </div>
                 <div className="caption center-block text-center">
-
                     <div className="os-animation" data-animation="bounceInUp" data-delay=".6s">
                         <h1>Hey There,</h1>
                     </div>
