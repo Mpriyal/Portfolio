@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 @import url('https://fonts.googleapis.com/css?family=Lobster|Kalam:700|Dancing+Script:700|Merienda:700|Courgette');
 
-
 /*body {*/
   /*overflow-x: hidden;*/
   /*font-family: 'Lato', sans-serif;*/
@@ -33,7 +32,7 @@ body {
 /*============= NAVIGATION =============*/
 .navbar {
   padding: .7rem 1rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: .1rem;
   transition: background-color .5s ease 0s;
@@ -58,50 +57,29 @@ body {
 .navbar-nav .nav-link {
   color: white!important;
   padding-top: .8rem;
+  font-weight: bold;
+  text-shadow: 1px 1px black;
 }
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
   cursor: pointer;
-  color: #1ebba3!important;
+  color: skyblue!important;
+  font-weight : bold;
 }
 .navbar .solid {
   background: rgba(0, 0, 0, 0.7)!important;
   transition: background-color 1s ease 0s;
 }
 
-/*Link label {*/
-  /*cursor: pointer;*/
-/*}*/
-
 /*============= LANDING PAGE =============*/
-
-/*.home-inner {*/
-  /*background-image: url('../public/img/computers.png');*/
-/*}*/
 
 .caption {
   width: 100%;
   max-width: 100%;
   position: absolute;
-  top: 38%;
+  top: 28%;
   z-index: 1;
-}
-.caption h1 {
-  color: white;
-  font-size: 4.5rem;
-  font-weight: 700;
-  letter-spacing: .3rem;
-  text-shadow: .1rem .1rem .8rem black;
-  padding-bottom: 1rem;
-}
-
-.caption h3 {
-  color: white;
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  font-weight: 400;
-  text-shadow: .1rem .1rem .5rem black;
-  padding-bottom: 2rem;
+  margin-bottom: 50rem;
 }
 
 .btn-lg {
@@ -128,6 +106,21 @@ body {
   font-weight: 800;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+#home-inner-tmp .overlay {
+  position: absolute;
+  background: #0c0808;
+  opacity: 0.6;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
 /*============ BOOTSTRAP BREAK POINTS:
 
 Extra small (xs) devices (portrait phones, less than 576px)
@@ -146,3 +139,4 @@ Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 
 =============*/
+

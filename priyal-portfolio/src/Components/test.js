@@ -1,6 +1,10 @@
 import React, {Component} from "react";
-import logo from "../logo.svg";
 import {Link, animateScroll as scroll} from "react-scroll";
+import '../animate.css';
+import '../waypoints.css';
+import '../index.css';
+import { Container, Row, Col, Image } from 'react-bootstrap';
+
 
 export default class NavBar extends Component {
 
@@ -118,31 +122,31 @@ export default class NavBar extends Component {
                 </nav>
                 <div className="landing">
                     <div className="home-wrap">
-                        <div className="home-inner">
+                        <div id='home-inner-tmp' className="home-inner">
+                <div className='overlay'>
+                </div>
+                    <div className="caption center-block text-center">
+                        <Container>
+                            <Row>
+                                <Col style={{'margin-bottom':'20px'}}>
+                                    <Image style={{'border':'2px solid white','text-align':'center'}} src="https://picsum.photos/200" roundedCircle />
+                                    <h1>Hi, I'm Priyal Mittal</h1>
+                                    <h2>Software Developer</h2>
+                                    <h2>ReactJS / Javascript / Python / Java</h2>
+                                </Col>
+                            </Row>
+                        </Container>
+                    </div>
                         </div>
                     </div>
                 </div>
-                <div className="caption center-block text-center">
-
-                    <div className="os-animation" data-animation="bounceInUp" data-delay=".6s">
-                        <h1>Hey There,</h1>
-                    </div>
-
-                    <div className="os-animation" data-animation="bounceInUp" data-delay=".8s">
-                        <h3>...WELCOME TO MY WEBSITE...</h3>
-                    </div>
-                    {/*<div className="os-animation" data-animation="bounceInUp" data-delay="1s">*/}
-                        {/*<a className="btn btn-outline-light btn-lg" href="#features">Get Started</a>*/}
-                    {/*</div>*/}
-
-                </div>
-                    <Link className="down-arrow"
-                          activeClass="active"
-                          to="skills"
-                          spy={true}
-                          smooth={true}
-                          offset={-70}
-                          duration={500}>
+                <Link className="down-arrow"
+                      activeClass="active"
+                      to="skills"
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={500}>
                     <div className="arrow bounce d-none d-md-block">
                         <i className="fas fa-angle-down" aria-hidden="true"></i>
                     </div>

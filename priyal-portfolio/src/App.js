@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Test from "./Components/test";
-import NavBar from "./Components/NavBar";
+import NavBar from "./Components/test";
 import Section from "./Components/Section";
 import Skills from "./Components/Skills";
 import Education from "./Components/Education";
@@ -12,11 +11,9 @@ import ContactMe from "./Components/ContactMe";
 class App extends Component {
 
   render() {
-      // const opacity = Math.min(100 / this.state.currentScrollHeight  , 1)
     return (
       <div className="App">
-          <Test/>
-        {/*<NavBar/>*/}
+          <NavBar/>
           <Skills
               title={"My Skills"}
               dark={true}
