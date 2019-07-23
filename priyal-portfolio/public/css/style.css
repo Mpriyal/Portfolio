@@ -116,7 +116,34 @@ body {
 	left: 0;
 }
 
+.fadeInUp {
+	animation-name: fadeInUp;
+}
 
+.social-icon li a {
+	color: #000;
+	background: #fff;
+	width: 35px;
+	height: 35px;
+	line-height: 38px;
+	display: block;
+	text-align: center;
+	border-radius: 100%;
+	font-size: 16px;
+	margin: 15px 6px 12px;
+}
+
+.text-center {
+	text-align: center!important;
+}
+
+ul, ol {
+	list-style: outside none none;
+	margin: 0;
+	padding: 0;
+	display: inline-flex;
+	text-align: center;
+}
 
 
 

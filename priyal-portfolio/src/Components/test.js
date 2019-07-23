@@ -4,6 +4,7 @@ import '../animate.css';
 import '../waypoints.css';
 import '../index.css';
 import { Container, Row, Col, Image } from 'react-bootstrap';
+import SimpleLineIcon from 'react-simple-line-icons';
 
 
 export default class NavBar extends Component {
@@ -133,6 +134,24 @@ export default class NavBar extends Component {
                                     <h1>Hi, I'm Priyal Mittal</h1>
                                     <h2>Software Developer</h2>
                                     <h2>ReactJS / Javascript / Python / Java</h2>
+                                    {/*<ul className="social-icon wow fadeInUp">*/}
+                                        {/*<li>*/}
+                                            {/*<a className="linkedin" href="https://www.linkedin.com/in/priyal-mittal-98704593/">*/}
+                                                {/*<SimpleLineIcon className="icon-social-linkedin"/>*/}
+                                            {/*</a>*/}
+                                        {/*</li>*/}
+                                        {/*<li>*/}
+                                            {/*<a className="instagram" href="https://www.instagram.com/priyal.mittal/">*/}
+                                                {/*<SimpleLineIcon className="icon-social-instagram"/>*/}
+                                            {/*</a>*/}
+                                        {/*</li>*/}
+                                        {/*<li>*/}
+                                            {/*<a className="github" href="https://github.com/Mpriyal">*/}
+                                                {/*<SimpleLineIcon className="icon-social-github"/>*/}
+                                            {/*</a>*/}
+                                        {/*</li>*/}
+                                    {/*</ul>*/}
+
                                 </Col>
                             </Row>
                         </Container>
