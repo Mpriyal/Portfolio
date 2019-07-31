@@ -95,15 +95,14 @@ body {
 
 .main_title h2 {
   font-size: 36px;
-  font-family: "Bree Serif", serif;
-  color: #222222;
+  font-family: "source sans pro", sans-serif !important;
+  color:rgb(102, 102, 102);;
   text-transform: uppercase;
   text-align: center;
-  border: 1px solid #222222;
   display: inline-block;
   line-height: 58px;
   padding: 0px 23px;
-  font-weight: 800;
+  font-weight: 100;
 }
 
 .center {
@@ -121,6 +120,7 @@ body {
   top: 0;
   left: 0;
 }
+
 /*============ BOOTSTRAP BREAK POINTS:
 
 Extra small (xs) devices (portrait phones, less than 576px)

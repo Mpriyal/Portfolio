@@ -20,7 +20,19 @@ export default class NavBar extends Component {
                         <li className="nav-item">
                             <Link
                                 activeClass="active"
-                                to="skills"
+                                to="/about"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                            >
+                                About
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link
+                                activeClass="active"
+                                to="/skills"
                                 spy={true}
                                 smooth={true}
                                 offset={-70}
@@ -32,7 +44,7 @@ export default class NavBar extends Component {
                         <li className="nav-item">
                             <Link
                                 activeClass="active"
-                                to="education"
+                                to="/education"
                                 spy={true}
                                 smooth={true}
                                 offset={-70}

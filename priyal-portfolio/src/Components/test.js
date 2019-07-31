@@ -43,7 +43,7 @@ export default class NavBar extends Component {
                               smooth={true}
                               offset={-70}
                               duration={500}>
-                            <h2>Priyal Mittal</h2>
+                            {/*<h2>Priyal Mittal</h2>*/}
                         </Link>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                             <span className="custom-toggler-icon"><i className="fas fa-bars"/></span>
@@ -60,6 +60,17 @@ export default class NavBar extends Component {
                                           offset={-70}
                                           duration={500}>
                                         Home
+                                    </Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link"
+                                          activeClass="active"
+                                          to="about"
+                                          spy={true}
+                                          smooth={true}
+                                          offset={-70}
+                                          duration={500}>
+                                        About
                                     </Link>
                                 </li>
                                 <li className="nav-item">
@@ -129,9 +140,9 @@ export default class NavBar extends Component {
                     <div className="caption center-block text-center">
                         <Container>
                             <Row>
-                                <Col style={{'margin-bottom':'20px'}}>
-                                    <Image style={{'border':'2px solid white','text-align':'center'}} src="https://picsum.photos/200" roundedCircle />
-                                    <h1>Hi, I'm Priyal Mittal</h1>
+                                <Col style={{'marginBottom':'20px'}}>
+                                    <Image style={{'border':'2px solid white','textAlign':'center'}} src="https://picsum.photos/200" roundedCircle />
+                                    <h1>Hi, I'm Priyal</h1>
                                     <h2>Software Developer</h2>
                                     <h2>ReactJS / Javascript / Python / Java</h2>
                                     {/*<ul className="social-icon wow fadeInUp">*/}

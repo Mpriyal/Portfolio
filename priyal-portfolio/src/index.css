@@ -12,3 +12,82 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.footer-right-contact .contact-icon {
+  background: #00b4d9;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 20px;
+  height: 40px;
+  left: 0;
+  padding-top: 8px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 40px;
+}
+
+.footer-right-contact .single-contact {
+  margin: 10px 22px;
+  padding: 3px 55px;
+  position: relative;
+  color: #666;
+}
+.images{
+  height: available;
+}
+
+.footer-area {
+  background: #1c1c20;
+}
+
+.section-padding {
+  padding: 60px 0;
+}
+
+footer {
+  display: block;
+}
+
+a.backToTop {
+  position: fixed;
+  bottom: 18px;
+  right: 15px;
+  text-decoration: none;
+}
+
+a {
+  color: dodgerblue;
+  background-color: transparent;
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+.social-icon li a {
+  color: #000;
+  background: #fff;
+  width: 35px;
+  height: 35px;
+  line-height: 38px;
+  display: block;
+  text-align: center;
+  border-radius: 100%;
+  font-size: 16px!important;
+  margin: 15px 6px 12px!important;
+}
+
+p {
+  font-weight: 400;
+  font-family: source sans pro,sans-serif;
+  margin: 0;
+  font-size: 14px;
+}

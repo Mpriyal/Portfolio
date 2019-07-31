@@ -7,6 +7,7 @@ import Education from "./Components/Education";
 import WorkExperience from "./Components/WorkExperience";
 import Projects from "./Components/Projects";
 import ContactMe from "./Components/ContactMe";
+import About from "./Components/About";
 
 class App extends Component {
 
@@ -14,6 +15,10 @@ class App extends Component {
     return (
       <div className="App">
           <NavBar/>
+          <About
+              title={"About Me"}
+              dark={true}
+              id={"about"}/>
           <Skills
               title={"My Skills"}
               dark={true}

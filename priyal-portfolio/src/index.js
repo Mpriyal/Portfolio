@@ -8,17 +8,17 @@ import Education from "./Components/Education";
 import WorkExperience from "./Components/WorkExperience";
 import Projects from "./Components/Projects";
 import ContactMe from "./Components/ContactMe";
+import About from "./Components/About";
 
 const routing = (
     <Router>
-        <div>
             <Route exact path="/" component={App} />
+            <Route path="/about" component={About}/>
             <Route path="/skills" component={Skills} />
             <Route path="/education" component={Education} />
             <Route path="/workEx" component={WorkExperience} />
             <Route path="/projects" component={Projects} />
             <Route path="/contact" component={ContactMe} />
-        </div>
     </Router>
 )
 

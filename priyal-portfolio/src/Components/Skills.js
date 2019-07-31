@@ -4,23 +4,39 @@ import dummyText from "../DummyText";
 export default class Skills extends Component {
     render() {
         return (
-            <div className="skills">
+            <div className="skills my-5 container">
                 <br/>
                 <div className="main_title" align="center">
-                <h2 align="center">{this.props.title}</h2>
+                <h2 align="center my-5">{this.props.title}</h2>
                 </div>
-                <h2 align="center">I'll show my skills soon!</h2>
-                <p>{dummyText}</p>
-                <p>{dummyText}</p>
-                <div className="row">
-                    {/*<div className="col-md-6 wow fadeInUp animated" style="visibility: visible;*/}
-                    {/*animation-name: fadeInUp;">*/}
-                            {/*<h4>Web development Skills</h4>*/}
-                            {/*<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Loren Ipsum has been the industry's standard dummy text.</p>*/}
-                            {/*<div>*/}
-                                {/*<h4>JavaScript</h4>*/}
-                            {/*</div>*/}
-                    {/*</div>*/}
+                <div className={'row'}>
+                    <div className={'col-4'}>
+                        <div className="card" style={{ "height" : "250px", "width": "250px"}}>
+                            <img src="https://s3.amazonaws.com/staticwebsiteaman/js.png" className="card-img-top" alt="..."/>
+                        </div>
+                    </div>
+                    <div className={'col-4'}>
+                        <div className="card"  style={{ "height" : "250px", "width": "250px"}}>
+                            <img src="https://s3.amazonaws.com/staticwebsiteaman/react.png" className="card-img-top" alt="..."/>
+                        </div>
+                    </div>
+                    <div className={'col-4'}>
+                        <div className="card" style={{ "height" : "250px", "width": "250px"}}>
+                            <img src="https://s3.amazonaws.com/staticwebsiteaman/node1.png" className="card-img-top" alt="..."/>
+                        </div>
+                    </div>
+                </div>
+                <div className={'row'}>
+                    <div className={'col-4'}>
+                        <div className="card" style={{ "height" : "250px", "width": "250px"}}>
+                            <img src="https://s3.amazonaws.com/staticwebsiteaman/angular.png"  style={{ "height" : "250px", "width": "250px"}} className="card-img-top" alt="..."/>
+                        </div>
+                    </div>
+                    <div className={'col-4'}>
+                        <div className="card"  style={{ "height" : "250px", "width": "250px"}}>
+                            <img src="https://s3.amazonaws.com/staticwebsiteaman/mongo.png" className="card-img-top" alt="..."/>
+                        </div>
+                    </div>
                 </div>
             </div>
         );

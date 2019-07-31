@@ -5,7 +5,7 @@ import React,{Component} from "react";
 export default class WorkExperience extends Component {
     render() {
         return (
-            <div  style={{'background-color': 'grey'}}>
+            <div className={'mx-5'}>
                 <div className={"workEx" + (this.props.dark ? " section-dark" : "")}>
                                      <br/>
                                     <div className="main_title" align="center">
@@ -16,11 +16,11 @@ export default class WorkExperience extends Component {
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     date="2011 - present"
-                    iconStyle={{background: 'rgb(33, 150, 243)', color: '#fff'}}
+                    iconStyle={{background: 'rgb(33, 150, 243)', color: '#000'}}
                     // icon={<WorkIcon/>}
                 >
-                    <h3 className="vertical-timeline-element-title">Creative Director</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+                    <h5 className="vertical-timeline-element-title">Creative Director</h5>
+                    <h6 className="vertical-timeline-element-subtitle">Miami, FL</h6>
                     <p>
                         Creative Direction, User Experience, Visual Design, Project Management, Team Leading
                     </p>
@@ -28,11 +28,11 @@ export default class WorkExperience extends Component {
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     date="2010 - 2011"
-                    iconStyle={{background: 'rgb(33, 150, 243)', color: '#fff'}}
+                    iconStyle={{background: 'rgb(33, 150, 243)', color: 'red'}}
                     // icon={<WorkIcon/>}
                 >
-                    <h3 className="vertical-timeline-element-title">Art Director</h3>
-                    <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+                    <h5 className="vertical-timeline-element-title">Art Director</h5>
+                    <h6 className="vertical-timeline-element-subtitle">San Francisco, CA</h6>
                     <p>
                         Creative Direction, User Experience, Visual Design, SEO, Online Marketing
                     </p>
@@ -43,8 +43,8 @@ export default class WorkExperience extends Component {
                     iconStyle={{background: 'rgb(33, 150, 243)', color: '#fff'}}
                     // icon={<WorkIcon/>}
                 >
-                    <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
+                    <h5 className="vertical-timeline-element-title">Web Designer</h5>
+                    <h6 className="vertical-timeline-element-subtitle">Los Angeles, CA</h6>
                     <p>
                         User Experience, Visual Design
                     </p>
@@ -55,8 +55,8 @@ export default class WorkExperience extends Component {
                     iconStyle={{background: 'rgb(33, 150, 243)', color: '#fff'}}
                     // icon={<WorkIcon/>}
                 >
-                    <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                    <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+                    <h5 className="vertical-timeline-element-title">Web Designer</h5>
+                    <h6 className="vertical-timeline-element-subtitle">San Francisco, CA</h6>
                     <p>
                         User Experience, Visual Design
                     </p>
@@ -67,9 +67,9 @@ export default class WorkExperience extends Component {
                     iconStyle={{background: 'rgb(233, 30, 99)', color: '#fff'}}
                     // icon={<SchoolIcon/>}
                 >
-                    <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social
-                        Media</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
+                    <h5 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social
+                        Media</h5>
+                    <h6 className="vertical-timeline-element-subtitle">Online Course</h6>
                     <p>
                         Strategy, Social Media
                     </p>
@@ -80,8 +80,8 @@ export default class WorkExperience extends Component {
                     iconStyle={{background: 'rgb(233, 30, 99)', color: '#fff'}}
                     // icon={<SchoolIcon/>}
                 >
-                    <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Certification</h4>
+                    <h5 className="vertical-timeline-element-title">Agile Development Scrum Master</h5>
+                    <h6 className="vertical-timeline-element-subtitle">Certification</h6>
                     <p>
                         Creative Direction, User Experience, Visual Design
                     </p>
@@ -92,17 +92,13 @@ export default class WorkExperience extends Component {
                     iconStyle={{background: 'rgb(233, 30, 99)', color: '#fff'}}
                     // icon={<SchoolIcon/>}
                 >
-                    <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media
-                        Visual Imaging</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
+                    <h5 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media
+                        Visual Imaging</h5>
+                    <h6 className="vertical-timeline-element-subtitle">Bachelor Degree</h6>
                     <p>
                         Creative Direction, Visual Design
                     </p>
                 </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    iconStyle={{background: 'rgb(16, 204, 82)', color: '#fff'}}
-                    // icon={<StarIcon/>}
-                />
             </VerticalTimeline>
             </div>
         )
