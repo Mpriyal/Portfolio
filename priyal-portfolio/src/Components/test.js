@@ -140,29 +140,11 @@ export default class NavBar extends Component {
                     <div className="caption center-block text-center">
                         <Container>
                             <Row>
-                                <Col style={{'marginBottom':'20px'}}>
-                                    <Image style={{'border':'2px solid white','textAlign':'center'}} src="https://picsum.photos/200" roundedCircle />
+                                <Col style={{marginTop: '90px'}}>
+                                    {/*<Image style={{'border':'2px solid white','textAlign':'center'}} src="https://picsum.photos/200" roundedCircle />*/}
                                     <h1>Hi, I'm Priyal</h1>
                                     <h2>Software Developer</h2>
                                     <h2>ReactJS / Javascript / Python / Java</h2>
-                                    {/*<ul className="social-icon wow fadeInUp">*/}
-                                        {/*<li>*/}
-                                            {/*<a className="linkedin" href="https://www.linkedin.com/in/priyal-mittal-98704593/">*/}
-                                                {/*<SimpleLineIcon className="icon-social-linkedin"/>*/}
-                                            {/*</a>*/}
-                                        {/*</li>*/}
-                                        {/*<li>*/}
-                                            {/*<a className="instagram" href="https://www.instagram.com/priyal.mittal/">*/}
-                                                {/*<SimpleLineIcon className="icon-social-instagram"/>*/}
-                                            {/*</a>*/}
-                                        {/*</li>*/}
-                                        {/*<li>*/}
-                                            {/*<a className="github" href="https://github.com/Mpriyal">*/}
-                                                {/*<SimpleLineIcon className="icon-social-github"/>*/}
-                                            {/*</a>*/}
-                                        {/*</li>*/}
-                                    {/*</ul>*/}
-
                                 </Col>
                             </Row>
                         </Container>
@@ -172,7 +154,7 @@ export default class NavBar extends Component {
                 </div>
                 <Link className="down-arrow"
                       activeClass="active"
-                      to="skills"
+                      to="about"
                       spy={true}
                       smooth={true}
                       offset={-70}
