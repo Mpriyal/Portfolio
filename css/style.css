@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+body {
+	overflow-x: hidden;
+	font-family: 'Lato', sans-serif;
+	color: #505962;
+}
+
+/*--- Nav Scrolling Offset --*/
+.offset:before {
+	height: 4rem;
+	margin-top: -4rem;
+	content: "";
+	display: block;
+}
+
+/*--- Extra Bootstrap Column Padding --*/
+[class*="col-"] {
+	padding: 1rem;
+}
+
+/*============= NAVIGATION =============*/
+
+.navbar {
+	padding: .7rem 1rem;
+	text-transform: uppercase;
+	font-size: .9rem;
+	font-weight: 700;
+	letter-spacing: .1rem;
+	transition: background-color .5s ease 0s;
+}
+.navbar-brand img {
+	height: 2rem;
+}
+.svg-inline--fa.fa-w-14 {
+	color: black;
+	font-size: 1.6rem;
+}
+.navbar-nav li {
+	padding-right: .8rem;
+}
+.navbar-nav .nav-link {
+	color: black;
+	padding-top: .8rem;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+	color: black;
+}
+.navbar.solid {
+	background: rgba(0, 0, 0, 0.7)!important;
+	transition: background-color 1s ease 0s;
+}
+
+/*============= LANDING PAGE =============*/
+
+.home-inner {
+	background-image: url("../img/hero-area.jpg");
+	background-size: cover;
+}
+
+#home-inner-tmp {
+	color: #fff;
+	overflow: hidden;
+	position: relative;
+}
+
+.caption {
+	width: 100%;
+	max-width: 100%;
+	position: absolute;
+	top: 38%;
+	z-index: 1;
+}
+.caption h1 {
+	color: white;
+	font-size: 4.5rem;
+	font-weight: 700;
+	letter-spacing: .3rem;
+	text-shadow: .1rem .1rem .8rem black;
+	padding-bottom: 1rem;
+}
+
+.caption h2 {
+	color:white;
+	font-style: italic;
+	font-weight: 700;
+}
+.caption h3 {
+	color: white;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-shadow: .1rem .1rem .5rem black;
+	padding-bottom: 2rem;
+	font-style: italic;
+}
+.btn-lg {
+	border-width: medium;
+	border-radius: 0;
+	padding: .8rem 1.5rem;
+	font-size: 1.1rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	display: inline-block !important;
+
+}
+
+#home-inner-tmp .overlay {
+	position: absolute;
+	background: #0c0808;
+	opacity: 0.6;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+/*.fadeInUp {*/
+	/*animation-name: fadeInUp;*/
+/*}*/
+
+/*.fadeInRight {*/
+	/*-webkit-animation-name: fadeInRight;*/
+	/*animation-name: fadeInRight;*/
+/*}*/
+
+/*.social-icon li a {*/
+	/*color: #000;*/
+	/*background: #fff;*/
+	/*width: 35px;*/
+	/*height: 35px;*/
+	/*line-height: 38px;*/
+	/*display: block;*/
+	/*text-align: center;*/
+	/*border-radius: 100%;*/
+	/*font-size: 16px;*/
+	/*margin: 15px 6px 12px;*/
+/*}*/
+
+.text-center {
+	text-align: center!important;
+}
+
+ul, ol {
+	list-style: outside none none;
+	margin: 0;
+	padding: 0;
+	display: inline-flex;
+	text-align: center;
+}
+
+.col-md-6 {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 50%;
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+
+.col-sm-6 {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 50%;
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+
+.vertical-timeline::before{
+	background: #f2f2f2 !important;
+}
+.vertical-timeline-element-content::before{
+	/*border-right: 7px solid #f2f2f2 !important;*/
+	/*border-left: 7px solid #f2f2f2 !important;*/
+
+}
+.vertical-timeline-element-icon{
+	box-shadow: 0 0 0 4px #f2f2f2, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05) !important;
+	left: 2px ;
+	width: 20px ;
+	height: 20px ;
+}
+.vertical-timeline-element-content{
+	border: 2px solid #f2f2f2;
+}
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
