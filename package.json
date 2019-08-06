@@ -1,7 +1,6 @@
 {
   "name": "priyal-portfolio",
   "version": "0.1.0",
-  "homepage": "https://github.com/Mpriyal/Mpriyal.github.io",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
