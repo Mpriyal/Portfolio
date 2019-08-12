@@ -10,7 +10,7 @@ export default class Education extends Component {
               </div>
               <div className={'row'}>
                   <div className={'col-10 offset-1'}>
-                      <div className="card  mb-3 align-middle " style={{"max-width": "50rem"}}>
+                      <div className="card  mb-3 align-middle " style={{"maxWidth": "50rem"}}>
                           <div className="card-body">
                               <h3><b><i>Northeastern University</i></b></h3>
                               <div className={'row'}>
@@ -34,7 +34,7 @@ export default class Education extends Component {
 
               <div className={'row'}>
                   <div className={'col-10 offset-1'}>
-                      <div className="card  mb-3 align-middle" style={{"max-width": "50rem"}}>
+                      <div className="card  mb-3 align-middle" style={{"maxWidth": "50rem"}}>
                           <div className="card-header"><b>Guru Gobind Singh Indraprastha University. Delhi, India</b></div>
                           <div className="card-body">
                               <div className={'row'}>
