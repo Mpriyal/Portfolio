@@ -1,6 +1,7 @@
 import React,{Component} from "react";
 import dummyText from "../DummyText";
 
+// Use Material UI complex interaction card
 export default class Projects extends Component {
     render() {
         return (

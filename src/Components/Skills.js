@@ -47,9 +47,9 @@ export default class Skills extends Component {
                         <div className="main_title" align="center">
                             <h2 align="center my-5">{this.props.title}</h2>
                         </div>
+                        <br/>
                         <Form>
                             <Form.Group controlId="exampleForm.ControlSelect1">
-                                <Form.Label>Enter type of Skill</Form.Label>
                                 <Form.Control as="select" value={this.state.selectedValue}
                                               onChange={this.handleChange}>
                                     <option>All</option>
@@ -60,8 +60,10 @@ export default class Skills extends Component {
                                 </Form.Control>
                             </Form.Group>
                         </Form>
-                        <div className='row'>
+                        <div className="container">
+                            <div className="row">
                             {this.renderSkills(this.state.selectedValue)}
+                            </div>
                         </div>
 
                         {/*<div className={'row'}>*/}

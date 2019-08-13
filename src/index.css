@@ -108,3 +108,25 @@ button {
   /*margin-right: 20px;*/
   margin: 10px;
 }
+
+/*.makeStyles-card-1 {*/
+  /*width: 170px;*/
+  /*height: 170px;*/
+  /*margin: 10px;*/
+  /*min-width: unset!important;*/
+/*}*/
+
+.card-class {
+  width: 160px!important;
+  height: 170px!important;
+  margin: 10px!important;
+  align-items: center;
+}
+
+.MuiCard-root {
+  height: 170px;
+}
+
+.MuiCardContent-root {
+  height: 170px;
+}
