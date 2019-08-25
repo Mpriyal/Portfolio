@@ -1,25 +1,14 @@
 import React,{Component} from 'react';
 import { withStyles } from '@material-ui/styles';
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 const styles = theme =>  ({
-    root: {
-        // width: '100%',
-        // display: 'block',
-        // marginTop: theme.spacing(15),
-        // marginLeft: theme.spacing(90),
-    },
     media: {
         height: 90,
         width: 90
-    },
-    card: {
-        // minWidth: 275,
     },
     bullet: {
         display: 'inline-block',
@@ -59,15 +48,8 @@ class SkillCard extends Component {
                     <Typography className={classes.pos} color="textSecondary">
                         {this.props.info[1]}
                     </Typography>
-                    {/*<Typography variant="body2" component="p">*/}
-                        {/*well meaning and kindly.*/}
-                        {/*<br/>*/}
-                        {/*{'"a benevolent smile"'}*/}
-                    {/*</Typography>*/}
+
                 </CardContent>
-                {/*<CardActions>*/}
-                    {/*<Button size="small">Learn More</Button>*/}
-                {/*</CardActions>*/}
             </Card>
             </div>
         );

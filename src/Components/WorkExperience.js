@@ -1,5 +1,6 @@
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import SimpleLineIcon from 'react-simple-line-icons';
 import React,{Component} from "react";
 
 export default class WorkExperience extends Component {
@@ -11,95 +12,67 @@ export default class WorkExperience extends Component {
                                     <div className="main_title" align="center">
                                          <h2 align="center">{this.props.title}</h2>
                                      </div>
-                </div>
             <VerticalTimeline>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
-                    date="2011 - present"
-                    iconStyle={{background: 'rgb(33, 150, 243)', color: '#000'}}
-                    // icon={<WorkIcon/>}
+                    date="Jan. 2019 - Present"
+                    iconStyle={{background: 'rgb(33, 150, 243)', color: '#000', alignContent: 'center'}}
+                    icon={<SimpleLineIcon name="bulb"/>}
                 >
-                    <h5 className="vertical-timeline-element-title">Creative Director</h5>
-                    <h6 className="vertical-timeline-element-subtitle">Miami, FL</h6>
+                    <i><h5 className="vertical-timeline-element-title">Software Engineer Co-op</h5></i>
+                    <h6 className="vertical-timeline-element-subtitle">Suffolk Construction - Boston, MA</h6>
                     <p>
-                        Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+                        • Designed and developed a tool using ReactJS, REST-XQuery and MarkLogic for the HR team to
+                        create/modify organizational charts for laying out the company's employee hierarchy<br/>
+                        • The tool reduced the chart creation time by upto 70%.<br/>
+                        • Built RESTful web services, using Rest-XQuery and MarkLogic for an in-company search engine.<br/>
+                        • Developed custom input flows in JAVA for automatic ingestion of data from disparate silos into a Data Hub in MarkLogic.<br/>
+                        • Created jobs for bulk manipulation and re-processing of data using CoRB, a JAVA tool.<br/>
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
-                    date="2010 - 2011"
+                    date="Sept. - Dec. 2018"
                     iconStyle={{background: 'rgb(33, 150, 243)', color: 'red'}}
-                    // icon={<WorkIcon/>}
+                    icon={<SimpleLineIcon name="bulb"/>}
                 >
-                    <h5 className="vertical-timeline-element-title">Art Director</h5>
-                    <h6 className="vertical-timeline-element-subtitle">San Francisco, CA</h6>
+                    <i><h5 className="vertical-timeline-element-title">Graduate Teaching Assistant - CS1100</h5></i>
+                    <h6 className="vertical-timeline-element-subtitle">Northeastern University - Boston, MA</h6>
                     <p>
-                        Creative Direction, User Experience, Visual Design, SEO, Online Marketing
+                        • Assisted faculty members in developing teaching materials, and grading assignments and exams.
+                        • Helped students comprehend the concepts associated with the course CS1100 - Computer Science
+                        and its Applications.
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
-                    date="2008 - 2010"
+                    date="Jan. - May 2018"
                     iconStyle={{background: 'rgb(33, 150, 243)', color: '#fff'}}
-                    // icon={<WorkIcon/>}
+                    icon={<SimpleLineIcon name="bulb"/>}
                 >
-                    <h5 className="vertical-timeline-element-title">Web Designer</h5>
-                    <h6 className="vertical-timeline-element-subtitle">Los Angeles, CA</h6>
+                    <i><h5 className="vertical-timeline-element-title">Graduate Teaching Assistant - CS3200</h5></i>
+                    <h6 className="vertical-timeline-element-subtitle">Northeastern University - Boston, MA</h6>
                     <p>
-                        User Experience, Visual Design
+                        • Assisted faculty members in developing teaching materials, and grading assignments and exams.
+                        • Helped students comprehend the concepts associated with the respective course CS3200 - Database Design.
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
-                    date="2006 - 2008"
+                    date="Jan. - May 2017"
                     iconStyle={{background: 'rgb(33, 150, 243)', color: '#fff'}}
-                    // icon={<WorkIcon/>}
+                    icon={<SimpleLineIcon name="bulb"/>}
                 >
-                    <h5 className="vertical-timeline-element-title">Web Designer</h5>
-                    <h6 className="vertical-timeline-element-subtitle">San Francisco, CA</h6>
+                    <i><h5 className="vertical-timeline-element-title">Associate Software Engineer</h5></i>
+                    <h6 className="vertical-timeline-element-subtitle">Accenture Solutions Pvt. Ltd. - Delhi, India</h6>
                     <p>
-                        User Experience, Visual Design
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--education"
-                    date="April 2013"
-                    iconStyle={{background: 'rgb(233, 30, 99)', color: '#fff'}}
-                    // icon={<SchoolIcon/>}
-                >
-                    <h5 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social
-                        Media</h5>
-                    <h6 className="vertical-timeline-element-subtitle">Online Course</h6>
-                    <p>
-                        Strategy, Social Media
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--education"
-                    date="November 2012"
-                    iconStyle={{background: 'rgb(233, 30, 99)', color: '#fff'}}
-                    // icon={<SchoolIcon/>}
-                >
-                    <h5 className="vertical-timeline-element-title">Agile Development Scrum Master</h5>
-                    <h6 className="vertical-timeline-element-subtitle">Certification</h6>
-                    <p>
-                        Creative Direction, User Experience, Visual Design
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--education"
-                    date="2002 - 2006"
-                    iconStyle={{background: 'rgb(233, 30, 99)', color: '#fff'}}
-                    // icon={<SchoolIcon/>}
-                >
-                    <h5 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media
-                        Visual Imaging</h5>
-                    <h6 className="vertical-timeline-element-subtitle">Bachelor Degree</h6>
-                    <p>
-                        Creative Direction, Visual Design
+                        • Retrieved information for bulk data analysis from an operational data store by executing
+                        SQL queries using Oracle SQL Developer tool. Also reported on milestones of the Agile based
+                        project and its key performance indicators.
                     </p>
                 </VerticalTimelineElement>
             </VerticalTimeline>
+            </div>
             </div>
         )
     }
