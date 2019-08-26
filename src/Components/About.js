@@ -16,25 +16,53 @@ export default class About extends Component {
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <div className="aboutMe wow fadeInRight">
-                            <h1>Hi, Guys!</h1>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled it to make a type specimen book.
-                                It has survived not only five centuries, but also the leap into electronic typesetting,
-                                remaining essentially unchanged. It was popularised in the 1960s with the release of
-                                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                                publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            <h1 align="center">Hi, Guys!</h1><br/>
+                            <p>
+                                • An Engineer with a passion to use science to find and develop better practical solutions.
+                                I am a Graduate student pursuing Masters in Computer Science from Northeastern University, Boston.
+                                I recently completed my internship with Suffolk Construction as a Software Engineer Co-op.
+                                At Suffolk, I was primarily focused on developing input flows in JAVA to ingest data from disparate silos into a Data Hub managed in a NoSQL database, MarkLogic.
+                                I also worked on harmonizing the data as per business requirements and developing RESTful web services to access the required data from MarkLogic.
+                                Apart from that, I also worked on designing and developing a web application to create organization charts to record the company's employee hierarchy using ReactJS and Redux.
+                            </p>
+                                <p>
+                                    • On the non-academic front, I am a trained dancer in the Indian classical dance forms: Kathak and Bharatnatayam.
+                                I love to explore my horizons and believe that one should focus on their desires and not upon their fears!!
+
                             </p>
                             <br/>
-                            <h6>Name : Priyal Mittal</h6>
-                            <h6>Country : USA</h6>
-                            <h6>Location : Boston, MA</h6>
-                            <h6>Email : mittal.pr@husky.neu.edu</h6>
-                            <h6>Phone : (617) 953-5360</h6>
-                                <button type="button" className="btn btn-primary">
-                                    Download Resume
-                                    <a href={resume} className="download"/>
-                                </button>
+                                <div className='row'>
+                                <div className='col-3'>
+                                    <h6>Name</h6>
+                                    <h6>Email</h6>
+                                    <h6>Location</h6>
+                                    <h6>Country</h6>
+                                    <h6>Phone</h6>
+                                </div>
+                                <div className='col-3'>
+                                    <h6>:</h6>
+                                    <h6>:</h6>
+                                    <h6>:</h6>
+                                    <h6>:</h6>
+                                    <h6>:</h6>
+                                </div>
+                                    <div className='col-6'>
+                                        <h6>Priyal Mittal</h6>
+                                        <h6>mittal.pr@husky.neu.edu</h6>
+                                        <h6>Boston, MA</h6>
+                                        <h6>USA</h6>
+                                        <h6>+1(617) 953-5360</h6>
+                                    </div>
+                                </div>
+                                <div className={'row'}>
+                                    <div className={'col-12'} style={{textAlign: "center"}}>
+                                        <a href={resume} className="download">
+                                            <button type="button" className="btn btn-outline-primary">
+                                            Download Resume
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
                     </div>
                 </div>
             </div>
