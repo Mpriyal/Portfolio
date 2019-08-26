@@ -10,7 +10,8 @@ import SimpleLineIcon from 'react-simple-line-icons';
 export default class NavBar extends Component {
 
     state = {
-        scrolled: false
+        scrolled: false,
+        isOpen: false
     };
 
     scrollToTop = () => {
@@ -29,8 +30,11 @@ export default class NavBar extends Component {
         window.addEventListener('scroll', this.listenScrollEvent)
     }
 
+    toggleOpen = () => this.setState({ isOpen: !this.state.isOpen });
+
 
     render() {
+        const menuClass = `dropdown-menu${this.state.isOpen ? " show" : ""}`;
         let newClassName = this.state.scrolled ? "navbar solid navbar-expand-lg fixed-top" : "navbar navbar-expand-lg fixed-top";
         return (
             <div id="home">
@@ -43,11 +47,89 @@ export default class NavBar extends Component {
                               smooth={true}
                               offset={-70}
                               duration={500}>
-                            {/*<h2>Priyal Mittal</h2>*/}
                         </Link>
-                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                            <span className="custom-toggler-icon"><i className="fas fa-bars"/></span>
-                        </button>
+                        <div className="navbar-toggler dropdown" onClick={this.toggleOpen}>
+                            <button
+                                className="btn btn-secondary dropdown-toggle"
+                                type="button"
+                                id="dropdownMenuButton"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                            >
+                                <span className="custom-toggler-icon"><i className="fas fa-bars"/></span>
+                            </button>
+                            <div className={menuClass} aria-labelledby="dropdownMenuButton"
+                                 style={{marginLeft: '-70px',
+                                     marginTop: '-15px',
+                                     backgroundColor: '#6c757d'}}>
+                                <Link className="nav-link dropdown-item"
+                                      activeClass="active"
+                                      to="home"
+                                      spy={true}
+                                      smooth={true}
+                                      offset={-70}
+                                      duration={500}>
+                                    Home
+                                </Link>
+                                <Link className="nav-link dropdown-item"
+                                      activeClass="active"
+                                      to="about"
+                                      spy={true}
+                                      smooth={true}
+                                      offset={-70}
+                                      duration={500}>
+                                    About
+                                </Link>
+                                <Link className="nav-link dropdown-item"
+                                      activeClass="active"
+                                      to="skills"
+                                      spy={true}
+                                      smooth={true}
+                                      offset={-70}
+                                      duration={500}>
+                                    Skills
+                                </Link>
+                                <Link className="nav-link dropdown-item"
+                                      activeClass="active"
+                                      to="education"
+                                      spy={true}
+                                      smooth={true}
+                                      offset={-70}
+                                      duration={500}>
+                                    Education
+                                </Link>
+                                <Link className="nav-link dropdown-item"
+                                      activeClass="active"
+                                      to="workEx"
+                                      spy={true}
+                                      smooth={true}
+                                      offset={-70}
+                                      duration={500}>
+                                    Work Experience
+                                </Link>
+                                <Link className="nav-link dropdown-item"
+                                      activeClass="active"
+                                      to="projects"
+                                      spy={true}
+                                      smooth={true}
+                                      offset={-70}
+                                      duration={500}>
+                                    Projects
+                                </Link>
+                                <Link className="nav-link dropdown-item"
+                                      activeClass="active"
+                                      to="contact"
+                                      spy={true}
+                                      smooth={true}
+                                      offset={-70}
+                                      duration={500}>
+                                    Contact Me
+                                </Link>
+                            </div>
+                        </div>
+                        {/*<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">*/}
+                            {/*<span className="custom-toggler-icon"><i className="fas fa-bars"/></span>*/}
+                        {/*</button>*/}
 
                         <div className="collapse navbar-collapse" id="navbarResponsive">
                             <ul className="navbar-nav ml-auto">
@@ -141,7 +223,6 @@ export default class NavBar extends Component {
                         <Container>
                             <Row>
                                 <Col style={{marginTop: '90px'}}>
-                                    {/*<Image style={{'border':'2px solid white','textAlign':'center'}} src="https://picsum.photos/200" roundedCircle />*/}
                                     <h1>Hi, I'm Priyal</h1>
                                     <h2>Software Developer</h2>
                                     <h2>ReactJS / Javascript / Python / Java</h2>

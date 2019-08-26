@@ -20,7 +20,7 @@ export default class Education extends Component {
                 <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div className="wow fadeInRight">
                         <div className="row">
-                        <h3><b>Northeastern University, Boston, MA</b></h3>
+                        <h4><b>Northeastern University, Boston, MA</b></h4>
                             <h6 align="right">Sept. 2017 - Present </h6>
                         </div>
                         <i><h5 className="card-title">Khoury College of Computer and Information Science</h5></i>
@@ -45,7 +45,7 @@ export default class Education extends Component {
                 <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div className="wow fadeInRight">
                         <div className="row">
-                        <h3><b>Guru Gobind Singh Indraprastha University, Delhi, India</b></h3>
+                        <h4><b>Guru Gobind Singh Indraprastha University, Delhi, India</b></h4>
                             <h6 align="right">Aug. 2012 - Jun. 2016 </h6>
                         </div>
                         <i><h5 className="card-title">Maharaja Agarsen Institute of Technology</h5></i>

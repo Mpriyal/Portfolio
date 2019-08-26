@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import NavBar from "./Components/test";
-import Section from "./Components/Section";
 import Skills from "./Components/Skills";
 import Education from "./Components/Education";
 import WorkExperience from "./Components/WorkExperience";

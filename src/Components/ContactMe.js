@@ -42,7 +42,7 @@ export default class ContactMe extends Component {
                                     <input type="text"
                                            className="form-control"
                                            name = "First"
-                                           placeholder="First name"
+                                           placeholder="First"
                                            onChange = {this.handleChange}
                                     />
                                 </div>
@@ -50,7 +50,7 @@ export default class ContactMe extends Component {
                                     <input type="text"
                                            className="form-control"
                                            name = "Last"
-                                           placeholder="Last name"
+                                           placeholder="Last"
                                            onChange = {this.handleChange}
                                     />
                                 </div>

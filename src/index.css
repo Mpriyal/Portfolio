@@ -134,3 +134,9 @@ button {
 .eduClass {
   text-align: center;
 }
+
+.dropdown-item.active, .dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: darkgray;
+}
