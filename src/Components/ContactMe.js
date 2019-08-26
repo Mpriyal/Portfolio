@@ -1,11 +1,27 @@
 import React,{Component} from "react";
 import '../../src/index.css';
-import resume from '../Priyal_Resume_NEU.pdf';
 import Footer from "./Footer";
 
 
 export default class ContactMe extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            First : "New First",
+            Last : "New Last",
+            Subject : "Contact message from website",
+            Message : "Default message sent from website"
+        }
+    };
+
+    handleChange = (e) => {
+        let name = e.target.name;
+        let value = e.target.value ? e.target.value : "Default Value";
+        this.setState({ [name]: value })
+    };
+
     render() {
+
         return (
             <div>
             <div className={"contact" + (this.props.dark ? " section-dark my-5" : "my-5")}>
@@ -23,32 +39,47 @@ export default class ContactMe extends Component {
                             </div>
                             <div className={'row'}>
                                 <div className={'col-6'}>
-                                    <input type="text" className="form-control" placeholder="First name" />
+                                    <input type="text"
+                                           className="form-control"
+                                           name = "First"
+                                           placeholder="First name"
+                                           onChange = {this.handleChange}
+                                    />
                                 </div>
                                 <div className={'col-6'}>
-                                    <input type="text" className="form-control" placeholder="Last name" />
+                                    <input type="text"
+                                           className="form-control"
+                                           name = "Last"
+                                           placeholder="Last name"
+                                           onChange = {this.handleChange}
+                                    />
                                 </div>
                             </div>
                             <div className={'row'}>
                                 <div className={'col-12'}>
-                                    <input type="text" className="form-control" placeholder="Subject" />
+                                    <input type="text"
+                                           className="form-control"
+                                           name = "Subject"
+                                           placeholder="Subject"
+                                           onChange = {this.handleChange}
+                                    />
                                 </div>
                             </div>
                             <div className={'row'}>
                                 <div className={'col-12'}>
-                                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message" />
+                                    <textarea className="form-control"
+                                              rows="4"
+                                              name = "Message"
+                                              placeholder="Message"
+                                              onChange = {this.handleChange}
+                                    />
                                 </div>
                             </div>
                             <div className={'row'}>
-                                <div className={'col-4'}>
-                                    <button type="button" className="btn btn-primary">Send Message</button>
-                                </div>
-                                <div className={'col-4'}>
-                                    <button type="button" className="btn btn-primary">
-                                        Download Resume
-                                    <a href={resume} className="download">
+                                <div className={'col-12'} style={{textAlign: "center"}}>
+                                    <a href={`mailto:mittal.pr@husky.neu.edu?subject=${this.state.Subject}&body=${this.state.First} ${this.state.Last} is asking ${this.state.Message}`}>
+                                    <button type="button" className="btn btn-outline-primary">Send Message</button>
                                     </a>
-                                    </button>
                                 </div>
                             </div>
                         </div>

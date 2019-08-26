@@ -9,8 +9,8 @@ export default class Projects extends Component {
                 <br/>
                 <div className="main_title my-5" align="center">
                     <h2 align="center">{this.props.title}</h2>
+                    <ProjectCard/>
                 </div>
-                <ProjectCard/>
             </div>
         );
     }

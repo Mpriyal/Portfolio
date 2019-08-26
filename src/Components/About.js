@@ -33,8 +33,7 @@ export default class About extends Component {
                             <h6>Phone : (617) 953-5360</h6>
                                 <button type="button" className="btn btn-primary">
                                     Download Resume
-                                    <a href={resume} className="download">
-                                    </a>
+                                    <a href={resume} className="download"/>
                                 </button>
                     </div>
                 </div>

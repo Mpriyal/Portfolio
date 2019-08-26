@@ -130,3 +130,7 @@ button {
 .MuiCardContent-root {
   height: 170px;
 }
+
+.eduClass {
+  text-align: center;
+}

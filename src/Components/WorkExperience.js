@@ -1,6 +1,5 @@
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import SimpleLineIcon from 'react-simple-line-icons';
 import React,{Component} from "react";
 
 export default class WorkExperience extends Component {
@@ -17,7 +16,6 @@ export default class WorkExperience extends Component {
                     className="vertical-timeline-element--work"
                     date="Jan. 2019 - Present"
                     iconStyle={{background: 'rgb(33, 150, 243)', color: '#000', alignContent: 'center'}}
-                    icon={<SimpleLineIcon name="bulb"/>}
                 >
                     <i><h5 className="vertical-timeline-element-title">Software Engineer Co-op</h5></i>
                     <h6 className="vertical-timeline-element-subtitle">Suffolk Construction - Boston, MA</h6>
@@ -34,7 +32,6 @@ export default class WorkExperience extends Component {
                     className="vertical-timeline-element--work"
                     date="Sept. - Dec. 2018"
                     iconStyle={{background: 'rgb(33, 150, 243)', color: 'red'}}
-                    icon={<SimpleLineIcon name="bulb"/>}
                 >
                     <i><h5 className="vertical-timeline-element-title">Graduate Teaching Assistant - CS1100</h5></i>
                     <h6 className="vertical-timeline-element-subtitle">Northeastern University - Boston, MA</h6>
@@ -48,7 +45,6 @@ export default class WorkExperience extends Component {
                     className="vertical-timeline-element--work"
                     date="Jan. - May 2018"
                     iconStyle={{background: 'rgb(33, 150, 243)', color: '#fff'}}
-                    icon={<SimpleLineIcon name="bulb"/>}
                 >
                     <i><h5 className="vertical-timeline-element-title">Graduate Teaching Assistant - CS3200</h5></i>
                     <h6 className="vertical-timeline-element-subtitle">Northeastern University - Boston, MA</h6>
@@ -61,7 +57,6 @@ export default class WorkExperience extends Component {
                     className="vertical-timeline-element--work"
                     date="Jan. - May 2017"
                     iconStyle={{background: 'rgb(33, 150, 243)', color: '#fff'}}
-                    icon={<SimpleLineIcon name="bulb"/>}
                 >
                     <i><h5 className="vertical-timeline-element-title">Associate Software Engineer</h5></i>
                     <h6 className="vertical-timeline-element-subtitle">Accenture Solutions Pvt. Ltd. - Delhi, India</h6>
